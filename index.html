@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portafolio</title>
   <style>
+    /* Estilos globales */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -13,6 +14,7 @@
       background-color: #AEC6CF;
     }
 
+    /* Estilos para el título principal */
     h1 {
       font-size: 36px;
       color: #333;
@@ -20,6 +22,7 @@
       margin-bottom: 30px;
     }
 
+    /* Estilos para los títulos de sección */
     h2 {
       font-size: 24px;
       color: #333;
@@ -29,22 +32,40 @@
       padding-bottom: 5px;
     }
 
+    /* Estilos para los encabezados */
+    header {
+      background-color: #F5F5F5; /* Color de fondo para la sección de encabezados */
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    /* Estilos para los encabezados de sección */
+    header h2 {
+      font-size: 20px;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Estilos para los párrafos */
     p {
       font-size: 18px;
       color: #666;
       margin-bottom: 20px;
     }
 
+    /* Estilos para las listas no ordenadas */
     ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
     }
 
+    /* Estilos para los elementos de lista */
     li {
       margin-bottom: 10px;
     }
 
+    /* Estilos para la sección de biografía */
     .bio-section {
       margin-bottom: 40px;
       padding: 30px;
@@ -53,12 +74,14 @@
       border-radius: 5px;
     }
 
+    /* Estilos para la imagen de la sección de biografía */
     .bio-section img {
-      width: 200px; /* Cambia el valor según el tamaño deseado */
+      width: 200px; /* Cambia el valor según el tamaño deseado -> Agrega una imagen aquí ← */
       height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
       border-radius: 50%;
     }
 
+    /* Estilos para la sección de experiencia laboral */
     .experience-section {
       margin-bottom: 40px;
       padding: 30px;
@@ -67,6 +90,7 @@
       border-radius: 5px;
     }
 
+    /* Estilos para la sección de contacto */
     .contact-section {
       margin-bottom: 40px;
       padding: 30px;
@@ -77,10 +101,9 @@
   </style>
 </head>
 <body>
-  <h1>Mi Portafolio</h1>
   
   <section class="bio-section">
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo del portafolio">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo del portafolio"> <!-- Agrega una imagen aquí ← -->
     <h2>Biografía</h2>
     <p>Juan Carlos Mérida: Data Analyst apasionado por descubrir insights y tomar decisiones basadas en datos. Experto en Python, SQL, Tableau y más.</p>
   </section>
@@ -95,5 +118,13 @@
   </section>
 
   <section class="contact-section">
-    <h2>Contacto
-    <p> Teléfono: 978867180
+    <h2>Contacto</h2>
+    <p>Número telefónico: +56978867180</p>
+    <ul>
+      <li><a href="https://www.facebook.com/tu_perfil_de_facebook">Facebook</a></li>
+      <li><a href="https://www.twitter.com/tu_perfil_de_twitter">Twitter</a></li>
+      <li><a href="https://www.instagram.com/tu_perfil_de_instagram">Instagram</a></li>
+    </ul>
+  </section>
+</body>
+</html>
