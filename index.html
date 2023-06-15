@@ -32,20 +32,6 @@
       padding-bottom: 5px;
     }
 
-    /* Estilos para los encabezados */
-    header {
-      background-color: #F5F5F5; /* Color de fondo para la sección de encabezados */
-      padding: 20px;
-      border-radius: 5px;
-    }
-
-    /* Estilos para los encabezados de sección */
-    header h2 {
-      font-size: 20px;
-      color: #333;
-      margin: 0;
-    }
-
     /* Estilos para los párrafos */
     p {
       font-size: 18px;
@@ -72,13 +58,23 @@
       background-color: #E6E6FA; /* Color de fondo para la sección de biografía */
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
+      text-align: center;
     }
 
     /* Estilos para la imagen de la sección de biografía */
     .bio-section img {
-      width: 200px; /* Cambia el valor según el tamaño deseado -> Agrega una imagen aquí ← */
-      height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
+      width: 200px; /* Cambia el valor según el tamaño deseado ← Agrega una imagen aquí */
+      height: auto;
       border-radius: 50%;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para la descripción de la sección de biografía */
+    .bio-section p {
+      max-width: 500px; /* Cambia el valor según el ancho máximo deseado */
+      margin: 0 auto; /* Centra horizontalmente el elemento */
     }
 
     /* Estilos para la sección de experiencia laboral */
@@ -98,14 +94,34 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
     }
+
+    /* Estilos para las redes sociales */
+    .social-links {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      list-style-type: none;
+    }
+
+    .social-links li {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .social-links li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+    }
   </style>
 </head>
 <body>
+  <h1>Mi Portafolio</h1>
   
   <section class="bio-section">
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo del portafolio"> <!-- Agrega una imagen aquí ← -->
-    <h2>Biografía</h2>
-    <p>Juan Carlos Mérida: Data Analyst apasionado por descubrir insights y tomar decisiones basadas en datos. Experto en Python, SQL, Tableau y más.</p>
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo del portafolio">
+    <h2>Juan Carlos Mérida</h2>
+    <p>Data Analyst apasionado por descubrir insights y tomar decisiones basadas en datos. Experto en Python, SQL, Tableau y más.</p>
   </section>
   
   <section class="experience-section">
@@ -120,7 +136,7 @@
   <section class="contact-section">
     <h2>Contacto</h2>
     <p>Número telefónico: +56978867180</p>
-    <ul>
+    <ul class="social-links">
       <li><a href="https://www.facebook.com/tu_perfil_de_facebook">Facebook</a></li>
       <li><a href="https://www.twitter.com/tu_perfil_de_twitter">Twitter</a></li>
       <li><a href="https://www.instagram.com/tu_perfil_de_instagram">Instagram</a></li>
